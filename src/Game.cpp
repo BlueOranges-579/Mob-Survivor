@@ -6,7 +6,8 @@
 #include <raylib.h>
 
 #include "../include/Player.h"
-Player mPlayer;
+Player mPlayer;   // TODO:: Fix global variable
+
 Game::Game() {
     RenderWindow();
 }
@@ -37,5 +38,6 @@ void Game::DrawGame() {
     BeginDrawing();
     ClearBackground(BLACK);
     mPlayer.InitPlayer();
+    mPlayer.DrawHealth();
     EndDrawing();
 }

@@ -20,7 +20,9 @@ add_executable(${PROJECT_NAME} src/main.cpp
         src/Game.cpp
         include/Game.h
         src/Player.cpp
-        include/Player.h)
+        include/Player.h
+        src/Enemies.cpp
+        include/Enemies.h)
 # Link to project
 target_link_libraries(${PROJECT_NAME} raylib)
 
